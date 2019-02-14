@@ -1,0 +1,18 @@
+Package: DeepOperators
+Type: Package
+Title: Deeply Learned Boolean Operators
+Version: 0.1.0
+Authors@R: person("Ellis", "Valentiner", email = "ellis.valentiner@gmail.com", role = c("aut", "cre"))
+Description: Provides "deeply learned" boolean operators.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    keras,
+    magrittr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
+URL: https://github.com/ellisvalentiner/DeepOperators
+BugReports: https://github.com/ellisvalentiner/DeepOperators/issues
