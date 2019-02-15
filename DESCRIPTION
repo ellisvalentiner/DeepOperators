@@ -13,6 +13,9 @@ Imports:
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Suggests: 
-    testthat
+    testthat,
+    covr
 URL: https://github.com/ellisvalentiner/DeepOperators
 BugReports: https://github.com/ellisvalentiner/DeepOperators/issues
+Depends: 
+    R (>= 3.1)

@@ -3,15 +3,20 @@
 
 # DeepOperators
 
+[![Travis build
+status](https://travis-ci.org/ellisvalentiner/DeepOperators.svg?branch=master)](https://travis-ci.org/ellisvalentiner/DeepOperators)
+[![Coverage
+status](https://codecov.io/gh/ellisvalentiner/DeepOperators/branch/master/graph/badge.svg)](https://codecov.io/github/ellisvalentiner/DeepOperators?branch=master)
+
 The goal of DeepOperators is to provide pre-trained deeply learned
 boolean operators.
 
-The `deep_and` and `deep_or` operators turn plain old business logic
-into “deep learning”, “machine learning”, and “AI” problems. Because
-business folk sometimes dictate how problems are solved, DeepOperators
-enables the ~~programmer~~ Data Scientist to use “deep learning” when it
-is required but it would otherwise be more practical to use built-in
-logical operators.
+The `%&%` and `%|%` operators turn plain old business logic into “deep
+learning”, “machine learning”, and “AI” problems. Because business folk
+sometimes dictate how problems are solved, DeepOperators enables the
+~~programmer~~ Data Scientist to use “deep learning” when it is required
+but it would otherwise be more practical to use built-in logical
+operators.
 
 ## Installation
 
@@ -29,18 +34,22 @@ This is a basic example of the DeepOperator functions:
 
 ``` r
 library(DeepOperators)
-deep_and(TRUE, FALSE)
+
+# using the deep AND operator, %&%
+TRUE %&% FALSE
 #> [1] FALSE
-deep_and(TRUE, TRUE)
+TRUE %&% TRUE
 #> [1] TRUE
-deep_or(TRUE, FALSE)
+
+# using the deep OR operator, %|%
+TRUE %|% FALSE
 #> [1] TRUE
-deep_or(FALSE, FALSE)
+FALSE %|% FALSE
 #> [1] FALSE
 ```
 
 Additionally DeepOperator provides function to automatically re-train
-the `deep_and` and `deep_or` operators.
+the deep operators.
 
 ``` r
 train_deep_or()
