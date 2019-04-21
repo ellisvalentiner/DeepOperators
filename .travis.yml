@@ -8,7 +8,13 @@ r:
 - 3.3
 - release
 
-before_install:
-  - pip install --user numpy h5py
 after_success:
   - Rscript -e 'covr::codecov()'
+
+addons:
+  apt:
+    packages:
+      - python2.7
+      - python-numpy
+      - python-scipy
+      - python-h5py
