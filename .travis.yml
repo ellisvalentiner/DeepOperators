@@ -8,7 +8,7 @@ r:
 - 3.3
 - release
 
-before_script:
-  - pip install h5py
+before_install:
+  - pip install numpy h5py
 after_success:
   - Rscript -e 'covr::codecov()'
