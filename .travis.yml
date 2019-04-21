@@ -9,7 +9,7 @@ r:
 - release
 
 before_script:
-  - Rscript -e 'reticulate::install_tensorflow()'
+  - Rscript -e 'tensorflow::install_tensorflow()'
 
 after_success:
   - Rscript -e 'covr::codecov()'
