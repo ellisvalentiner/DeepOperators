@@ -1,3 +1,7 @@
+#' DeepOperators
+#'
+#' Uses the reticulate framework to access Keras
+
 .onAttach <- function(libname, pkgname) {
   deepoperators.env <<- new.env()
   or_model <- keras::unserialize_model(readRDS(system.file("models", "or.rds", package = "DeepOperators", mustWork = TRUE)))
