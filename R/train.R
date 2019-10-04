@@ -3,7 +3,7 @@
 #' @export
 train_deep_or <- function(steps_per_epoch = 100, epochs = 100, validation_steps = 100) {
   data_generator <- function() {
-    x <- rbinom(2, 1, 0.5)
+    x <- stats::rbinom(2, 1, 0.5)
     y <- as.integer(any(x))
     return(list(matrix(x, ncol=2), y))
   }
@@ -32,7 +32,7 @@ train_deep_or <- function(steps_per_epoch = 100, epochs = 100, validation_steps 
 #' @export
 train_deep_and <- function(steps_per_epoch = 100, epochs = 100, validation_steps = 100) {
   data_generator <- function() {
-    x <- rbinom(2, 1, 0.5)
+    x <- stats::rbinom(2, 1, 0.5)
     y <- as.integer(all(x))
     return(list(matrix(x, ncol=2), y))
   }
