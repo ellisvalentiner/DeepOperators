@@ -13,7 +13,7 @@ r:
 - devel
 
 before_install:
-  - pip install h5py
+  - pip install --user h5py
 
 after_success:
   - Rscript -e 'covr::codecov()'
