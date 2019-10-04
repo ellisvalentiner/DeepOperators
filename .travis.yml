@@ -14,6 +14,7 @@ r:
 
 before_install:
   - pip install --user h5py
+  - Rscript -e 'tensorflow::install_tensorflow()'
 
 after_success:
   - Rscript -e 'covr::codecov()'
